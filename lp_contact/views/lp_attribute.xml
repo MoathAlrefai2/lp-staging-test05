@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="contact_attribute_list_view" model="ir.ui.view">
+        <field name="model">lp.attribute</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="name"/>
+                <field name="create_date"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="contact_attribute_form_view" model="ir.ui.view">
+        <field name="model">lp.attribute</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                    <field name="name" />
+                        <field name="create_date"/>
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="contact_attribute_action_window" model="ir.actions.act_window">
+        <field name="name">Contact Attribute</field>
+        <field name="res_model">lp.attribute</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <menuitem name="Attributes" id="contact_attribute_menu"
+              action="contact_attribute_action_window"
+              parent="contacts.res_partner_menu_config"
+               sequence="4"
+              />
+
+
+</odoo>

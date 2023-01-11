@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+system_access_deleted_records,system_access_deleted_records,model_deleted_records,base.group_erp_manager,1,1,1,1
+system_access_deleted_records2,system_access_deleted_records2,model_deleted_records,lp_security.director_group,1,1,1,1
+
+access_excluded_models,access_excluded_models,model_excluded_models,base.group_erp_manager,1,1,1,1
+access_excluded_models2,access_excluded_models2,model_excluded_models,lp_security.director_group,1,1,1,1
+
+access_delete_records_upto,access_delete_records_upto,model_delete_records_upto,base.group_erp_manager,1,1,1,1
+access_delete_records_upto2,access_delete_records_upto2,model_delete_records_upto,lp_security.director_group,1,1,1,1

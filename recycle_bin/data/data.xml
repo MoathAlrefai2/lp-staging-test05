@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="mail_mail" model="excluded.models" forcecreate="False">
+        <field name="models" ref="mail.model_mail_mail"/>
+        <field name="model_name">Outgoing Mails</field>
+    </record>
+
+    <record id="model_data" model="excluded.models" forcecreate="False">
+        <field name="models" ref="base.model_ir_model_data"/>
+         <field name="model_name">Model Data</field>
+    </record>
+
+    <record id="mail_message" model="excluded.models" forcecreate="False">
+        <field name="models" ref="mail.model_mail_message"/>
+        <field name="model_name">Message</field>
+    </record>
+
+    <record id="deleted_records" model="excluded.models" forcecreate="False">
+        <field name="models" ref="recycle_bin.model_deleted_records"/>
+        <field name="model_name">Stores deleted records.</field>
+    </record>
+
+    <record id="ir_attachment" model="excluded.models" forcecreate="False">
+        <field name="models" ref="base.model_ir_attachment"/>
+        <field name="model_name">ir.attachment</field>
+    </record>
+
+    <record id="mail_followers" model="excluded.models" forcecreate="False">
+        <field name="models" ref="mail.model_mail_followers"/>
+        <field name="model_name">mail.followers</field>
+    </record>
+
+
+    <record id="mail_activity" model="excluded.models" forcecreate="False">
+        <field name="models" ref="mail.model_mail_activity"/>
+        <field name="model_name">mail.activity</field>
+    </record>
+
+     <record id="bus" model="excluded.models" forcecreate="False">
+        <field name="models" ref="bus.model_bus_bus"/>
+        <field name="model_name">bus.bus</field>
+    </record>
+
+
+</odoo>

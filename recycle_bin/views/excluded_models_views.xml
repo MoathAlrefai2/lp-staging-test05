@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="excluded_models_list_view" model="ir.ui.view">
+        <field name="model">excluded.models</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="models"/>
+                <field name="model_name"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="excluded_models_form_view" model="ir.ui.view">
+        <field name="model">excluded.models</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                    <field name="models" options="{'no_create': True, 'no_create_edit':True}"/>
+                        <field name="model_name"/>
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="excluded_models_action_window" model="ir.actions.act_window">
+        <field name="name">Excluded Models</field>
+        <field name="res_model">excluded.models</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <menuitem name="Excluded Models" id="excluded_models_menu"
+              action="excluded_models_action_window"
+              parent="recycle_bin.configuration_menu"
+              />
+
+
+</odoo>
