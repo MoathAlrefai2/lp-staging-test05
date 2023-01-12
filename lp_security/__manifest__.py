@@ -6,7 +6,7 @@
     'description': """
       Modifications for menus access rights 
   """,
-    'version': '14.0.4.2',
+    'version': '14.0.4.3',
     'author': "Leading Point",
     'website': "https://leading-point.com",
     'data': [
