@@ -32,7 +32,7 @@
             <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
             <field name="mode">primary</field>
             <field name="arch" type="xml">
-                <xpath expr="//button[@name=preference_save" position="attributes">
+                <xpath expr="//footer[]" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
                 <h1 position="replace"/>
